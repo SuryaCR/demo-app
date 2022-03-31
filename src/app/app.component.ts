@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-app';
+  location = 'Chennai';
+  onBoxValueChange(paraData:any){
+    console.log('app component : ' + paraData.value);
+  }
 }
