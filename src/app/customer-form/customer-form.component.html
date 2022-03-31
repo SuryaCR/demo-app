@@ -1,5 +1,9 @@
 <div class="panel-heading">Customer Form</div>
-<form name="customerForm" #customerFormGroup="ngForm" (submit)="saveCustomer(customerFormGroup)">
+<form
+  name="customerForm"
+  #customerFormGroup="ngForm"
+  (submit)="saveCustomer(customerFormGroup)"
+>
   <div
     class="form-group"
     [class.has-error]="
@@ -21,7 +25,7 @@
       *ngIf="firstNameFormControl.invalid && firstNameFormControl.touched"
     >
       <span *ngIf="firstNameFormControl.errors?.['required']">
-      <mark>First Name is Required</mark>  
+        <mark>First Name is Required</mark>
       </span>
       <span *ngIf="firstNameFormControl.errors?.['minlength']">
         <mark>First Name > 3 Characters</mark>
@@ -69,24 +73,24 @@
   <button class="btn">submit</button>
 </form>
 
-<!-- <pre class="bg-info card">
-    is pristine : {{customerFormGroup.pristine}}
-    is dirty : {{customerFormGroup.dirty}}
+<pre class="bg-info card">
+    is pristine : {{ customerFormGroup.pristine }}
+    is dirty : {{ customerFormGroup.dirty }}
 
-    is valid: {{customerFormGroup.valid}}
-    is invalid: {{customerFormGroup.invalid}}
+    is valid: {{ customerFormGroup.valid }}
+    is invalid: {{ customerFormGroup.invalid }}
 
-    is untouched : {{customerFormGroup.untouched}}
-    is touched : {{customerFormGroup.touched}}
+    is untouched : {{ customerFormGroup.untouched }}
+    is touched : {{ customerFormGroup.touched }}
 </pre>
 
 <pre class="bg-warning card">
-    is pristine : {{firstNameFormControl.pristine}}
-    is dirty : {{firstNameFormControl.dirty}}
+    is pristine : {{ firstNameFormControl.pristine }}
+    is dirty : {{ firstNameFormControl.dirty }}
 
-    is valid: {{firstNameFormControl.valid}}
-    is invalid: {{firstNameFormControl.invalid}}
+    is valid: {{ firstNameFormControl.valid }}
+    is invalid: {{ firstNameFormControl.invalid }}
 
-    is untouched : {{firstNameFormControl.untouched}}
-    is touched : {{firstNameFormControl.touched}}
-</pre> -->
+    is untouched : {{ firstNameFormControl.untouched }}
+    is touched : {{ firstNameFormControl.touched }}
+</pre>
