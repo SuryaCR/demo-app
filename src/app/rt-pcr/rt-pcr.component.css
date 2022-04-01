@@ -1,0 +1,35 @@
+@import url("../../../node_modules/bootstrap/dist/css/bootstrap.css");
+* {
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  input {
+    background-color: rgb(226, 223, 223);
+    border-radius: 10px;
+    border: transparent;
+  }
+  .top-container {
+    background-color: rgb(233, 255, 255);
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25%;
+    width: 50%;
+  }
+  #button,
+  #button1 {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 50%;
+  }
+  table,
+  th,
+  td,tr {
+    border: 2px solid black;
+  }

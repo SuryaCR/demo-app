@@ -1,0 +1,84 @@
+<section class="top-container">
+    <h2>RT-PCR Form</h2>
+    <form>
+      <div>
+        <label>Enter Your Name:</label
+        ><input type="text" placeholder="Enter Your Name" id="first-name" />
+      </div>
+      <div>
+        <label>Enter Aadhar Number:</label
+        ><input
+          type="text"
+          placeholder="Enter Your Aadhar Number"
+          id="aadhar-no"
+        />
+      </div>
+      <div>
+        <label>Enter Date Of Birth:</label><input type="date" id="date" />
+      </div>
+      <div>
+        <label>Enter City Name:</label
+        ><input type="text" placeholder="Enter Your City" id="city" />
+      </div>
+      <div>
+        <label>Date Of Test:</label><input type="date" id="date-test" />
+      </div>
+      <div><label>Time Of Test:</label><input type="time" id="time" /></div>
+      <div>
+        <label>Test Result:</label>
+        <label>Positive:</label
+        ><input
+          type="radio"
+          id="result"
+          value="Positive"
+          name="testresult"
+        />
+        <span
+          ><label>Negative:</label
+          ><input
+            type="radio"
+            id="result"
+            value="Negative"
+            name="testresult"
+        /></span>
+      </div>
+      <div>
+        <label>Lab Name:</label
+        ><input type="text" placeholder="Enter Lab Name" id="lab-name" />
+      </div>
+      <div>
+        <label>Report Number:</label><input type="number" id="report-no" />
+      </div>
+      <div>
+        <label>Select Gender:</label>
+        <label>Male:</label>
+        <input type="radio" id="gender" name="gender" value="Male" />
+        <label>Female:</label
+        ><input type="radio" id="gender" name="gender" value="Female" />
+        <label>Others:</label
+        ><input type="radio" id="gender" name="gender" value="Others" />
+      </div>
+      <div>
+        <input type="button" id="button" value="Submit" (click)="tableDisplay()" (click)="getRadioValue()"/>
+      </div>
+    </form>
+  </section>
+
+  <section id="second-container" class="container">
+    <table id="table">
+      <thead>
+        <th>Name</th>
+        <th>Aadhar Number</th>
+        <th>Date</th>
+        <th>City</th>
+        <th>Time Of Test</th>
+        <th>Date Of Test</th>
+        <th>Lab Name</th>
+        <th>Report No</th>
+        <th>Test Result</th>
+        <th>Gender</th>
+      </thead>
+    </table>
+  </section>
+
+  
