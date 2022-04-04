@@ -44,6 +44,12 @@ var NewRow = table.insertRow(this.n);
     var date1: string[]=[];
     date1[this.x] = (<HTMLInputElement>document.getElementById("date-test")).value;
 
+    // var testResult: string[]=[];
+    // testResult[this.x] = this.getRadioValue();
+
+    // var gender: string[]=[];
+    // gender[this.x] = this.getRadioValue();
+
     var value1 = NewRow.insertCell(0);
   var value2 = NewRow.insertCell(1);
   var value3 = NewRow.insertCell(2);
@@ -66,10 +72,11 @@ var NewRow = table.insertRow(this.n);
   this.x++;
     }
     
-    getRadioValue() {
-      var element = (<HTMLInputElement> document.getElementById("result")).value;
-      var isChecked = element;
-      console.log(isChecked);
-    }
+    // getRadioValue() {
+    //   var element = (<HTMLInputElement> document.getElementById("result")).value;
+    //   for(var index=0;index<element.length;index++){
+    //     return element;
+    //   }
+    // }
 
 }
