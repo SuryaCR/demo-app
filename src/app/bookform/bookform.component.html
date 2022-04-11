@@ -1,0 +1,34 @@
+<div>
+    <form [formGroup]="bookForm">
+        <fieldset>
+            <div class="form-group">
+                <label for="name">Book Name</label>
+                <input type="text" id="name" [value]="book.name" formControlName="name" class="form-control">
+                <div class="help-block" *ngIf="name.invalid && name.touched">
+                    <span *ngIf=""></span>
+                    <span *ngIf=""></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" id="price" [value]="book.price" formControlName="price" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Author Name</label>
+                <input type="text" id="author" [value]="book.author" formControlName="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="description">description</label>
+                <input type="text" id="description" [value]="book.description" formControlName="description" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="publishDate">publishDate </label>
+                <input type="text" id="publishDate" [value]="book.publishDate" formControlName="publishDate" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="discount">discount</label>
+                <input type="text" id="discount" [value]="book.discount" formControlName="discount" class="form-control">
+            </div>
+        </fieldset>
+    </form>
+</div>
