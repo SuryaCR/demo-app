@@ -19,6 +19,8 @@ import { BookCatlogComponent } from './book-catlog/book-catlog.component';
 import { NewsComponent } from './news/news.component';
 import { MenuComponent } from './menu/menu.component';
 import { BookformComponent } from './bookform/bookform.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -44,6 +46,8 @@ const routes: Routes = [
     NewsComponent,
     MenuComponent,
     BookformComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
