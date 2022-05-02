@@ -1,5 +1,6 @@
 import {
   Component,
+  DoCheck,
   Input,
   OnChanges,
   OnInit,
@@ -10,8 +11,8 @@ import {
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css'],
 })
-export class ParentComponent implements OnInit, OnChanges {
-  isChild = false;
+export class ParentComponent implements OnInit, OnChanges,DoCheck {
+  child = true;
   @Input()
   nameChange = '';
   constructor() {
@@ -23,10 +24,10 @@ export class ParentComponent implements OnInit, OnChanges {
   ngOnChanges() {
     console.log('Parent OnChanges is Called');
   }
-  ngOnDestroy(): void {
-    console.log('Parent OnDestroy is Called');
+  ngDoCheck(){
+    console.log('Parent DoCheck is Called');
   }
   change() {
-    this.isChild = !this.isChild;
+    this.child = !this.child;
   }
 }

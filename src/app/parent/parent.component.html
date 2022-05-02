@@ -1,6 +1,6 @@
 <p class="text-primary">parent works!</p>
-<input type="text" [(ngModel)]="nameChange" /><br />
+<input type="text" [ngModel]="nameChange" /><br />
 <button (click)="change()" class="btn btn-primary">Child</button>
-<app-child *ngIf="isChild" [nameChange]="nameChange" class="from-control">
-  <h4 #parentContent>This is content from parent</h4>
+<app-child *ngIf="child" [nameChange]="nameChange" class="from-control">
+  <h4>This is content from parent</h4>
 </app-child>

@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: 'news', component: NewsComponent },
   { path: 'books', component: BookCatlogComponent },
   { path: 'addbooks', component: BookformComponent },
+  { path: 'rt-pcr', component: RtPcrComponent },
 ];
 @NgModule({
   declarations: [
